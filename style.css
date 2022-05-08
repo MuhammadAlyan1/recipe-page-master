@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+/* reset */
+:root {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* main-page */
+.main-page-content h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #000000;
+}
+
+.main-page-content p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #4f4f4f;
+  font-style: italic;
+  padding-left: 2rem;
+  position: relative;
+  width: fit-content;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.main-page-content p::before {
+  content: url(./6dots.svg);
+  position: absolute;
+  left: 5px;
+}
+
+.image-div img {
+  max-width: 100%;
+}
+
+/* cards */
+
+.sub-card p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #bdbdbd;
+}
+
+.sub-card p:last-child {
+  font-weight: 500;
+  color: #333333;
+}
+
+/* yields */
+.yields i {
+  color: #f2994a;
+}
+
+.yields p:last-child {
+  color: #f2994a;
+  font-weight: 500;
+}
+
+/* ingredients */
+.ingredients > h1 {
+  font-family: "Playfair Display", serif;
+  color: #333333;
+  font-weight: 700;
+}
+
+.ingredients > p {
+  font-family: "Playfair Display", serif;
+  color: #333333;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.ingredients ul {
+  list-style-type: none;
+  padding-left: 0px;
+  padding-left: 2rem;
+}
+
+.ingredients ul li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.ingredients ul li::before {
+  content: " ";
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  border-radius: 3px;
+  outline: 1px solid #333333;
+  position: absolute;
+  left: -30px;
+}
+
+/* instructions  */
+
+.instructions h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  color: #333333;
+}
+
+.instructions ul {
+  list-style-type: none;
+  padding-left: 0px;
+  padding-left: 3rem;
+}
+
+.instructions ul li {
+  margin-bottom: 0.75rem;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.instructions ul li::before {
+  background-color: #f2994a;
+  color: #ffffff;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 3px;
+  position: absolute;
+  left: -40px;
+  top: 5px;
+}
+
+.instructions ul li:nth-child(1)::before {
+  content: "1";
+  text-align: center;
+}
+
+.instructions ul li:nth-child(2)::before {
+  content: "2";
+  text-align: center;
+}
+
+.instructions ul li:nth-child(3)::before {
+  content: "3";
+  text-align: center;
+}
+
+.instructions ul li:nth-child(4)::before {
+  content: "4";
+  text-align: center;
+}
+
+.instructions ul li:nth-child(5)::before {
+  content: "5";
+  text-align: center;
+}
+
+.instructions ul li:nth-child(6)::before {
+  content: "6";
+  text-align: center;
+}
+
+.instructions ul li:nth-child(7)::before {
+  content: "7";
+  text-align: center;
+}
+
+@media (max-width: 799px) {
+  /* container */
+
+  .container {
+    position: relative;
+    margin-bottom: 5rem;
+  }
+
+  /* main-page-content */
+  .main-page-content h1 {
+    font-size: 24px;
+  }
+
+  /* cards */
+  .cards {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap-reverse;
+  }
+
+  .cards .fa-solid {
+    margin-right: 0.5rem;
+    margin-top: 5px;
+  }
+
+  .sub-card {
+    display: flex;
+  }
+
+  .sub-card p {
+    margin: 0px;
+    font-size: 8px;
+  }
+
+  .sub-card p:last-child {
+    font-size: 10px;
+  }
+
+  /* yields */
+  .yields {
+    order: 1;
+  }
+
+  /* ingredients */
+  .ingredients > h1 {
+    margin-top: 2rem;
+    margin-bottom: 0px;
+    font-size: 18px;
+  }
+
+  .ingredients > p {
+    margin-top: 0.7rem;
+    font-size: 16px;
+  }
+
+  .ingredients ul li {
+    font-size: 14px;
+  }
+
+  #cheesecake {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  /* instructions */
+
+  .instructions h1 {
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+    font-size: 24px;
+  }
+
+  .instructions ul li {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 800px) {
+  .container {
+    margin: 0 auto;
+    max-width: 950px;
+  }
+
+  /* main-page-content */
+
+  .main-page-content h1 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+  }
+
+  .main-page-content p {
+    font-size: 14px;
+    max-width: 63ch;
+  }
+
+  /* cards */
+  .cards {
+    margin-top: 3rem;
+    width: fit-content;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    float: right;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.301);
+    border-radius: 12px;
+  }
+
+  .cards .fa-solid {
+    font-size: 25px;
+    margin-right: 0.5rem;
+    margin-top: 10px;
+    margin-right: 0.5rem;
+    margin-top: 10px;
+  }
+
+  .sub-card {
+    display: flex;
+  }
+
+  .sub-card p {
+    margin: 4px;
+    font-size: 10px;
+  }
+
+  .sub-card p:last-child {
+    font-size: 14px;
+  }
+
+  /* ingredients */
+
+  .ingredients h1 {
+    margin-top: 3rem;
+    font-size: 24px;
+  }
+
+  .ingredients p {
+    font-size: 18px;
+  }
+
+  .ingredients li {
+    font-size: 16;
+    line-height: 1.6;
+    max-width: 50ch;
+  }
+
+  /* instruction */
+
+  .instructions {
+    margin-bottom: 5rem;
+  }
+
+  .instructions h1 {
+    font-size: 24px;
+  }
+
+  .instructions li {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 50ch;
+  }
+}
